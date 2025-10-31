@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <h1>Etch-a-Sketch</h1>
+    <p>Instructions from: The Odin Project</p>
+    <!-- makes grid container -->
+    <div id="container"></div>
+
+    <!-- grid size -->
+    <p><strong>Want to change grid size?</strong> (max 99)</p>
+    <input id="columnInput" type="number" minlength="0" maxlength="99" placeholder="0">
+    <input id="rowInput" type="number" minlength="0" maxlength="99" placeholder="0">
+    <input id="sizeInput" type="number" minlength="0" maxlength="99" placeholder="0">
+    <button id="gridSubmit" >Submit</button>
+
+    <!-- grid size -->
+    <br>
+    <p><strong>How about a flippin' colorway?</strong></p>
+    <form>
+        <input id="colorBlack" name="colorway" type="radio" checked>
+        <label for="colorBlack">Black (Default)</label><br>
+        <input id="colorRainbow" name="colorway" type="radio">
+        <label for="colorRainbow">Rainbow</label><br>
+        <input id="colorRGB" name="colorway" type="radio">
+        <label for="colorRGB">RGB #GAM3R</label><br>
+
+        <input id="colorSubmit" type="submit">
+    </form>
+
+</body>
+</html>

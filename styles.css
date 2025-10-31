@@ -1,0 +1,23 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black 2px;
+}
+
+.square {
+    background-color: rgb(235, 235, 255);
+    border: solid black 1px;
+    box-sizing: border-box; /*make border inside the box*/
+}
+
+#columnInput, #rowInput, #sizeInput {
+    width: 30px;
+}
+
+#colorSubmit {
+    margin-top: 10px;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
