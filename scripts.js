@@ -52,6 +52,17 @@ applyButton = document.querySelector("#applyButton");
 clearButton = document.querySelector("#clearButton");
 
 
+enableBorderButton = document.querySelector("#enableBorderButton");
+enableBorderButton.addEventListener("change", () => {
+    let squares = document.querySelectorAll(".square");
+    if (enableBorderButton.checked) {
+        squares.forEach(square => square.style.border = "solid black 1px");
+    } else {
+        squares.forEach(square => square.style.border = "none");
+    }
+});
+
+
 resetButton.addEventListener("click", () => {
     clickmeImage.src = "icons/icon-clickme.png";
     columnInput.value = 16;
@@ -67,18 +78,8 @@ resetButton.addEventListener("click", () => {
         document.body.style.color = "white";
         container.style.borderColor = "rgba(0, 0, 0, 1)";
     }
+    
 })
-
-enableBorderButton = document.querySelector("#enableBorderButton");
-enableBorderButton.addEventListener("change", () => {
-    let squares = document.querySelectorAll(".square");
-    if (enableBorderButton.checked) {
-        squares.forEach(square => square.style.border = "solid black 1px");
-    } else {
-        squares.forEach(square => square.style.border = "none");
-    }
-});
-
 
 container = document.querySelector("#container");
 
