@@ -9,6 +9,9 @@ function createGrid(column, row, squareSize) {
     if (squareSize > 99) {
         squareSize = 99;
     }
+    if (squareSize < 3) {
+        squareSize = 3;
+    }
     let container = document.querySelector("#container");
     container.innerHTML = "";
     container.style.width = `${column * squareSize}px`
