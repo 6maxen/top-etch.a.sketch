@@ -10,17 +10,22 @@
 <body>
     <h1>Etch-a-Sketch</h1>
     <p>Instructions from: The Odin Project</p>
-    <!-- makes grid container -->
+
+    <!-- grid -->
     <div id="container"></div>
+    <button id="clearButton">Clear</button>
 
-    <!-- grid size -->
+    <!-- grid-size options -->
     <p><strong>Want to change grid size?</strong> (max 99)</p>
-    <input id="columnInput" type="number" minlength="0" maxlength="99" placeholder="0">
-    <input id="rowInput" type="number" minlength="0" maxlength="99" placeholder="0">
-    <input id="sizeInput" type="number" minlength="0" maxlength="99" placeholder="0">
-    <button id="gridSubmit" >Submit</button>
+    <label for="columnInput">Height</label>
+    <input id="columnInput" value="16" type="number" minlength="0" maxlength="99" placeholder="0">
+    <label for="rowInput">Width</label>
+    <input id="rowInput" value="16" type="number" minlength="0" maxlength="99" placeholder="0">
+    <label for="sizeInput">Size</label>
+    <input id="sizeInput" value="30" type="number" minlength="0" maxlength="99" placeholder="0">
+    <input id="gridSubmit" type="submit">
 
-    <!-- grid size -->
+    <!-- grid colorway -->
     <br>
     <p><strong>How about a flippin' colorway?</strong></p>
     <form>
@@ -30,8 +35,6 @@
         <label for="colorRainbow">Rainbow</label><br>
         <input id="colorRGB" name="colorway" type="radio">
         <label for="colorRGB">RGB #GAM3R</label><br>
-
-        <input id="colorSubmit" type="submit">
     </form>
 
 </body>

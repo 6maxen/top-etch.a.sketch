@@ -12,6 +12,7 @@
 
 #columnInput, #rowInput, #sizeInput {
     width: 30px;
+    margin-right: .5rem;
 }
 
 #colorSubmit {
