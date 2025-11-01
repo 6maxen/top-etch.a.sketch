@@ -1,7 +1,9 @@
 #container {
     display: flex;
+
     flex-wrap: wrap;
-    border: solid black 2px;
+    border: solid rgb(0, 0, 0) 3px;
+    margin-left: -.1rem;
 }
 
 .square {
@@ -11,8 +13,9 @@
 }
 
 #columnInput, #rowInput, #sizeInput {
-    width: 30px;
-    margin-right: .5rem;
+    width: 3rem;
+    margin-right: .1rem;
+    font-size: 1.2rem;
 }
 
 #colorSubmit {
@@ -21,4 +24,75 @@
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(13, 27, 39);
+    color: rgb(255, 255, 255);
+}
+
+#resetButton {
+    background-color: rgb(240, 76, 76);
+    color: white;
+    border: solid rgb(177, 0, 0) 2px;
+    border-radius: .2rem;
+    padding: .2rem;
+    padding-left: .7rem;
+    padding-right: .7rem;
+    cursor: pointer;
+}
+#clearButton {
+    background-color: rgb(120, 141, 255);
+    color: white;
+    border: solid rgb(113, 121, 235) 3px;
+    border-radius: .7rem;
+    padding: .1rem;
+    padding-left: .7rem;
+    padding-right: .7rem;
+    cursor: pointer;
+    margin-bottom: .2rem;
+}
+
+img {
+    height: 3rem;
+    margin-left: 1rem;
+}
+
+#headerWrapper {
+    margin-top: -1rem;
+    display: flex;
+    align-items: center
+}
+
+#header {
+    align-self: end;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#headerDescription {
+    margin-top: -1rem;
+    font-style: italic;
+    margin-bottom: 2.4rem;
+}
+
+.lightmodeWrapper {    
+    display: flex;
+    flex-direction: row;
+    margin-left: -.9rem;
+}
+
+#lightmodeButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#clickmeImage {
+    margin-left: -5px;
+}
+
+#applyButton {
+    background-color: rgb(41, 189, 65);
+    color: white;
+    border: solid rgb(0, 179, 74) 5px;
+    border-radius: .7rem;
+    padding: .7rem;
+    cursor: pointer;
 }

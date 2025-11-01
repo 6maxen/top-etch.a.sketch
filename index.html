@@ -8,22 +8,32 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <h1>Etch-a-Sketch</h1>
-    <p>Instructions from: The Odin Project</p>
+    <button id="resetButton">Reset All</button>
+    
+    <div id="headerWrapper">
+        <h1 id="header">Etch-a-Sketch</h1>
+        <div class="lightmodeWrapper">             
+            <button id="lightmodeButton"><img id="lightmodeImage" src="/icons/icon-lightmode.png"></button>
+            <img id="clickmeImage" src="icons/icon-clickme.png">
+        </div>
+    </div>
+    <p id="headerDescription">Instructions from: <strong>The Odin Project</strong></p>
 
     <!-- grid -->
-    <div id="container"></div>
     <button id="clearButton">Clear</button>
+    <div id="gridWrapper">
+        <div id="container"></div>
+    </div>
 
     <!-- grid-size options -->
     <p><strong>Want to change grid size?</strong> (max 99)</p>
-    <label for="columnInput">Height</label>
-    <input id="columnInput" value="16" type="number" minlength="0" maxlength="99" placeholder="0">
-    <label for="rowInput">Width</label>
+    <label for="rowInput">Height:</label>
     <input id="rowInput" value="16" type="number" minlength="0" maxlength="99" placeholder="0">
-    <label for="sizeInput">Size</label>
+    <label for="columnInput">Width:</label>
+    <input id="columnInput" value="16" type="number" minlength="0" maxlength="99" placeholder="0">
+    <label for="sizeInput">Size:</label>
     <input id="sizeInput" value="30" type="number" minlength="0" maxlength="99" placeholder="0">
-    <input id="gridSubmit" type="submit">
+
 
     <!-- grid colorway -->
     <br>
@@ -36,6 +46,12 @@
         <input id="colorRGB" name="colorway" type="radio">
         <label for="colorRGB">RGB #GAM3R</label><br>
     </form>
+    
+
+    <!-- Apply Changes -->
+     <br>
+     <button id="applyButton">Apply Changes</button>
+     <br>
 
 </body>
 </html>
