@@ -2,8 +2,7 @@
     display: flex;
 
     flex-wrap: wrap;
-    border: solid rgb(0, 0, 0) 3px;
-    margin-left: -.2rem;
+    border: solid rgb(0, 0, 0) 1px;
 }
 
 .square {
@@ -47,7 +46,7 @@ body {
     padding-left: .7rem;
     padding-right: .7rem;
     cursor: pointer;
-    margin-bottom: .2rem;
+    margin-bottom: .5rem;
 }
 
 img {
@@ -95,4 +94,13 @@ img {
     border-radius: .6rem;
     padding: .7rem;
     cursor: pointer;
+}
+
+#disableBorderWrapper {
+    display: flex;
+    margin-bottom: -1.5rem;
+}
+
+#disableBorderButton {
+    margin-left: 1rem;
 }

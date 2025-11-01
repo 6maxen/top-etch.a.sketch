@@ -58,26 +58,36 @@ resetButton.addEventListener("click", () => {
         lightmodeImage.src = "icons/icon-lightmode.png";
         document.body.style.backgroundColor = "rgb(13, 27, 39)";//
         document.body.style.color = "white";
+        container.style.borderColor = "rgba(0, 0, 0, 1)";
     }
 })
 
+disableBorderButton = document.querySelector("#disableBorderButton");
+container = document.querySelector("#container");
 
 applyButton.addEventListener("click", () => {
     columnValue = Number(columnInput.value);
     rowValue = Number(rowInput.value);
     sizeValue = Number(sizeInput.value);
     createGrid(columnValue, rowValue, sizeValue)
+    if (disableBorderButton.checked) {
+        let squares = document.querySelectorAll(".square");
+        squares.forEach(square => square.style.border = "none");
+    }
 })
 
 clearButton.addEventListener("click", () => {
     createGrid(columnValue, rowValue, sizeValue)
+    if (disableBorderButton.checked) {
+        let squares = document.querySelectorAll(".square");
+        squares.forEach(square => square.style.border = "none");
+    }
 })
 
 lightmodeButton = document.querySelector("#lightmodeButton");
 lightmodeImage = document.querySelector("#lightmodeImage");
 clickmeImage = document.querySelector("#clickmeImage")
 
-container = document.querySelector("#container")
 
 lightmodeButton.addEventListener("click", () => {
     clickmeImage.src = "";
@@ -86,7 +96,7 @@ lightmodeButton.addEventListener("click", () => {
         lightmodeImage.src = "icons/icon-darkmode.png";
         document.body.style.backgroundColor = "rgba(236, 238, 240, 1)";
         document.body.style.color = "black";
-        container.style.borderColor = "rgba(236, 238, 240, 1)";
+        container.style.borderColor = "rgba(0, 0, 0, 1)";
 
     // lightmode to darkmode
     } else {
