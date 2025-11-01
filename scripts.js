@@ -1,5 +1,14 @@
 
 function createGrid(column, row, squareSize) {
+    if (column > 99) {
+        column = 99;
+    }
+    if (row > 99) {
+        row = 99;
+    }
+    if (squareSize > 99) {
+        squareSize = 99;
+    }
     let container = document.querySelector("#container");
     container.innerHTML = "";
     container.style.width = `${column * squareSize}px`
