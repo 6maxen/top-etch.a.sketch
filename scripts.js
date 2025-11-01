@@ -27,6 +27,10 @@ columnInput = document.querySelector("#columnInput");
 rowInput = document.querySelector("#rowInput");
 sizeInput = document.querySelector("#sizeInput");
 
+let columnValue = 16
+let rowValue = 16
+let sizeValue = 30
+
 resetButton = document.querySelector("#resetButton");
 applyButton = document.querySelector("#applyButton");
 clearButton = document.querySelector("#clearButton");
@@ -37,24 +41,21 @@ resetButton.addEventListener("click", () => {
     columnInput.value = 16;
     rowInput.value = 16;
     sizeInput.value = 30;
-    let columnValue = Number(columnInput.value);
-    let rowValue = Number(rowInput.value);
-    let sizeValue = Number(sizeInput.value);
+    columnValue = Number(columnInput.value);
+    rowValue = Number(rowInput.value);
+    sizeValue = Number(sizeInput.value);
     createGrid(columnValue, rowValue, sizeValue)
 })
 
 
 applyButton.addEventListener("click", () => {
-    let columnValue = Number(columnInput.value);
-    let rowValue = Number(rowInput.value);
-    let sizeValue = Number(sizeInput.value);
+    columnValue = Number(columnInput.value);
+    rowValue = Number(rowInput.value);
+    sizeValue = Number(sizeInput.value);
     createGrid(columnValue, rowValue, sizeValue)
 })
 
 clearButton.addEventListener("click", () => {
-    let columnValue = Number(columnInput.value);
-    let rowValue = Number(rowInput.value);
-    let sizeValue = Number(sizeInput.value);
     createGrid(columnValue, rowValue, sizeValue)
 })
 
