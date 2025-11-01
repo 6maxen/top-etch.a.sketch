@@ -8,58 +8,62 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <button id="resetButton">Reset Grid</button>
-    
-    <div id="headerWrapper">
-        <h1 id="header">Etch-a-Sketch</h1>
-        <div class="lightmodeWrapper">             
-            <button id="lightmodeButton"><img id="lightmodeImage" src="icons/icon-lightmode.png"></button>
-            <img id="clickmeImage" src="icons/icon-clickme.png">
+    <div class="pageWrapper">
+        <button id="resetButton">Reset Grid</button>
+        
+        <div id="headerWrapper">
+            <h1 id="header">Etch-a-Sketch</h1>
+            <div class="lightmodeWrapper">             
+                <button id="lightmodeButton"><img id="lightmodeImage" src="icons/icon-lightmode.png"></button>
+                <img id="clickmeImage" src="icons/icon-clickme.png">
+            </div>
         </div>
+        <footer><a href="https://github.com/6maxen"><u></u>6maxen<img id="githubIcon" src="icons/icon-githubwhite.png"></a></footer>
+        <p id="headerDescription"><em>Instructions from: <strong><a href="https://www.theodinproject.com/">The Odin Project</a></strong></em></p>
+        
+
+        <!-- grid -->
+        <button id="clearButton">Clear</button>
+        <div id="gridWrapper">
+            <div id="container"></div>
+        </div>
+
+        <!-- enable border -->
+        <div id="enableBorderWrapper">
+            <p><strong>Enable Borders:</strong></p>
+            <input id="enableBorderButton" type="checkbox" checked>
+        </div>
+
+        <!-- grid-size options -->
+        <p><strong>Want to change grid size?</strong> (max 99)</p>
+        <label for="rowInput">Height:</label>
+        <input id="rowInput" value="16" type="number" minlength="0" maxlength="99" placeholder="0">
+        <label for="columnInput">Width:</label>
+        <input id="columnInput" value="16" type="number" minlength="0" maxlength="99" placeholder="0">
+        <label for="sizeInput">Size:</label>
+        <input id="sizeInput" value="30" type="number" minlength="0" maxlength="99" placeholder="0">
+
+
+        <!-- grid colorway -->
+        <br>
+        <p><strong>How about a flippin' colorway?</strong></p>
+        <form>
+            <input id="colorBlack" name="colorway" type="radio" checked>
+            <label for="colorBlack">Black (Default)</label><br>
+            <input id="colorRainbow" name="colorway" type="radio">
+            <label for="colorRainbow"><s>Rainbow</s></label><br>
+            <input id="colorRGB" name="colorway" type="radio">
+            <label for="colorRGB"><s>RGB #GAM3R</s></label><br>
+            
+        </form>
+        
+
+        <!-- Apply Changes -->
+        <br>
+        <button id="applyButton">Apply Changes</button>
+        
     </div>
-    <p id="headerDescription"><em>by Maxen Cheng, &nbsp&nbspInstructions from <u><a href="https://www.theodinproject.com/">The Odin Project</u></a></em></p>
     
-
-    <!-- grid -->
-    <button id="clearButton">Clear</button>
-    <div id="gridWrapper">
-        <div id="container"></div>
-    </div>
-
-    <!-- enable border -->
-    <div id="enableBorderWrapper">
-        <p><strong>Enable Borders:</strong></p>
-        <input id="enableBorderButton" type="checkbox" checked>
-    </div>
-
-    <!-- grid-size options -->
-    <p><strong>Want to change grid size?</strong> (max 99)</p>
-    <label for="rowInput">Height:</label>
-    <input id="rowInput" value="16" type="number" minlength="0" maxlength="99" placeholder="0">
-    <label for="columnInput">Width:</label>
-    <input id="columnInput" value="16" type="number" minlength="0" maxlength="99" placeholder="0">
-    <label for="sizeInput">Size:</label>
-    <input id="sizeInput" value="30" type="number" minlength="0" maxlength="99" placeholder="0">
-
-
-    <!-- grid colorway -->
-    <br>
-    <p><strong>How about a flippin' colorway?</strong></p>
-    <form>
-        <input id="colorBlack" name="colorway" type="radio" checked>
-        <label for="colorBlack">Black (Default)</label><br>
-        <input id="colorRainbow" name="colorway" type="radio">
-        <label for="colorRainbow">Rainbow</label><br>
-        <input id="colorRGB" name="colorway" type="radio">
-        <label for="colorRGB">RGB #GAM3R</label><br>
-    </form>
-    
-
-    <!-- Apply Changes -->
-     <br>
-     <button id="applyButton">Apply Changes</button>
-     </div>
-     
 
 </body>
 </html>

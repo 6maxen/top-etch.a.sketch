@@ -67,7 +67,7 @@ img {
 }
 
 #headerDescription {
-    margin-top: -1rem;
+    margin-top: -.1rem;
     margin-bottom: 2.4rem;
 }
 
@@ -118,4 +118,17 @@ a {
 
 a:visited {
   color: inherit;
+}
+
+#githubIcon {
+    height: 1rem;
+    margin-left: 5px;
+}
+
+footer {
+    
+    display: flex;
+    margin-top: -.9rem;
+    align-items: center;
+
 }
