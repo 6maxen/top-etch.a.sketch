@@ -28,6 +28,13 @@ function createGrid(column, row, squareSize) {
             
         }
     }
+    let enableBorderButton = document.querySelector("#enableBorderButton");
+    let squares = document.querySelectorAll(".square");
+    if (enableBorderButton.checked) {
+        squares.forEach(square => square.style.border = "solid black 1px");
+    } else {
+        squares.forEach(square => square.style.border = "none");
+    }
 }
 
 createGrid(16,16,30)
@@ -62,7 +69,17 @@ resetButton.addEventListener("click", () => {
     }
 })
 
-disableBorderButton = document.querySelector("#disableBorderButton");
+enableBorderButton = document.querySelector("#enableBorderButton");
+enableBorderButton.addEventListener("change", () => {
+    let squares = document.querySelectorAll(".square");
+    if (enableBorderButton.checked) {
+        squares.forEach(square => square.style.border = "solid black 1px");
+    } else {
+        squares.forEach(square => square.style.border = "none");
+    }
+});
+
+
 container = document.querySelector("#container");
 
 applyButton.addEventListener("click", () => {
@@ -70,18 +87,10 @@ applyButton.addEventListener("click", () => {
     rowValue = Number(rowInput.value);
     sizeValue = Number(sizeInput.value);
     createGrid(columnValue, rowValue, sizeValue)
-    if (disableBorderButton.checked) {
-        let squares = document.querySelectorAll(".square");
-        squares.forEach(square => square.style.border = "none");
-    }
 })
 
 clearButton.addEventListener("click", () => {
     createGrid(columnValue, rowValue, sizeValue)
-    if (disableBorderButton.checked) {
-        let squares = document.querySelectorAll(".square");
-        squares.forEach(square => square.style.border = "none");
-    }
 })
 
 lightmodeButton = document.querySelector("#lightmodeButton");

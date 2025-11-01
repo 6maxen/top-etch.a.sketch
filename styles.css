@@ -96,11 +96,11 @@ img {
     cursor: pointer;
 }
 
-#disableBorderWrapper {
+#enableBorderWrapper {
     display: flex;
     margin-bottom: -1.5rem;
 }
 
-#disableBorderButton {
+#enableBorderButton {
     margin-left: 1rem;
 }
