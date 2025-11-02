@@ -5,8 +5,10 @@ Update Log:
 11/2
 - Added Compatibility for Dark-Reader (extension)
 - Fixed GitHub logo not changing colors on light-mode
+
 11/1
 - Added GitHub username to document
 - Locked grid-size minimum to 3 (prevents border from janking up)
+
 10/31
 - Added dark-mode!
