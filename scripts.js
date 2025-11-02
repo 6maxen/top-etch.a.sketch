@@ -77,6 +77,7 @@ resetButton.addEventListener("click", () => {
     createGrid(columnValue, rowValue, sizeValue);
     if (lightmodeImage.src.includes("icons/icon-darkmode.png")) {
         lightmodeImage.src = "icons/icon-lightmode.png";
+        githubIcon.src = "icons/icon-githubwhite.png";
         document.body.style.backgroundColor = "rgb(13, 27, 39)";//
         document.body.style.color = "white";
         container.style.borderColor = "rgba(0, 0, 0, 1)";
@@ -100,13 +101,14 @@ clearButton.addEventListener("click", () => {
 lightmodeButton = document.querySelector("#lightmodeButton");
 lightmodeImage = document.querySelector("#lightmodeImage");
 clickmeImage = document.querySelector("#clickmeImage")
-
+githubIcon = document.querySelector("#githubIcon");
 
 lightmodeButton.addEventListener("click", () => {
     clickmeImage.src = "";
     // darkmode to lightmode
     if (lightmodeImage.src.includes("icons/icon-lightmode.png")) {
         lightmodeImage.src = "icons/icon-darkmode.png";
+        githubIcon.src = "icons/icon-githubblack.png";
         document.body.style.backgroundColor = "rgba(236, 238, 240, 1)";
         document.body.style.color = "black";
         container.style.borderColor = "rgba(0, 0, 0, 1)";
@@ -114,6 +116,7 @@ lightmodeButton.addEventListener("click", () => {
     // lightmode to darkmode
     } else {
         lightmodeImage.src = "icons/icon-lightmode.png";
+        githubIcon.src = "icons/icon-githubwhite.png";
         document.body.style.backgroundColor = "rgb(13, 27, 39)";//
         document.body.style.color = "white";
         container.style.borderColor = "rgba(0, 0, 0, 1)";
