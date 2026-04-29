@@ -3,4 +3,4 @@
 _Built as part of The Odin Project curriculum_ 🧙‍♂️
 
 11.01.2025  
-You can read the date as the start of the year or the end, I will leave that up to you strange traveler.
+You can read that as the start of the year or the end, I will leave that up to you strange traveler.
